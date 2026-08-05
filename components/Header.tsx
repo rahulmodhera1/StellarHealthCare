@@ -57,14 +57,14 @@ export default function Header() {
                 href={link.href}
                 aria-current={active ? "page" : undefined}
                 className={clsx(
-                  "text-sm font-medium tracking-wide transition-colors duration-150",
+                  "border-b-2 pb-0.5 text-sm font-medium tracking-wide transition-colors duration-150",
                   solid
                     ? active
-                      ? "text-teal-600"
-                      : "text-navy-900/80 hover:text-teal-600"
+                      ? "border-teal-600 text-teal-600"
+                      : "border-transparent text-navy-900/80 hover:text-teal-600"
                     : active
-                      ? "text-teal-400"
-                      : "text-white/85 hover:text-white",
+                      ? "border-white text-white"
+                      : "border-transparent text-white/85 hover:text-white",
                 )}
               >
                 {link.label}

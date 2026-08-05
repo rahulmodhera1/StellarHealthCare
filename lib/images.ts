@@ -1,6 +1,6 @@
 /**
  * On-brand campaign imagery generated for Stellar HealthCare Staffing
- * (realistic, warm, navy/teal-graded editorial photography — diverse RNs,
+ * (realistic, warm, navy/teal-graded editorial photography of diverse RNs,
  * RPNs, and PSWs with clients in home, hospital, and pediatric settings).
  *
  * These are served today from the generation platform's asset CDN. Before

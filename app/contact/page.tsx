@@ -17,7 +17,6 @@ export default function ContactPage() {
   return (
     <>
       <PageHero
-        eyebrow="Contact Us"
         title="Let's talk about the care you need."
         description="Whether you're staffing a unit or bringing care home for a family member, tell us what's going on and our team will follow up within one business day."
       />

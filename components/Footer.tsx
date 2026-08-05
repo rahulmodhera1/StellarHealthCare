@@ -25,7 +25,7 @@ export default function Footer() {
           <Logo variant="white" />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/65">
             Connecting GTA hospitals, long-term care homes, and families with
-            vetted RNs, RPNs, and PSWs — plus compassionate in-home care for
+            vetted RNs, RPNs, and PSWs, plus compassionate in-home care for
             every stage of life.
           </p>
           <div className="mt-6 flex items-center gap-3">
@@ -34,7 +34,7 @@ export default function Footer() {
                 key={platform}
                 href={href}
                 aria-label={`Stellar HealthCare Staffing on ${platform}`}
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors duration-150 hover:border-teal-400 hover:text-teal-400"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors duration-150 hover:border-gold-400 hover:text-gold-400"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   {socialIcons[platform as keyof typeof socialIcons]}
@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-teal-400">
+          <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-gold-400">
             Quick Links
           </h2>
           <ul className="mt-5 space-y-3 text-sm">
@@ -65,7 +65,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-teal-400">
+          <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-gold-400">
             Services
           </h2>
           <ul className="mt-5 space-y-3 text-sm">
@@ -80,7 +80,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-teal-400">
+          <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-gold-400">
             Contact
           </h2>
           <address className="mt-5 space-y-3 text-sm not-italic">

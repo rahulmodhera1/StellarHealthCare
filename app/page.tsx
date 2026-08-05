@@ -8,9 +8,9 @@ import WhyStellar from "@/components/WhyStellar";
 import { buildMetadata } from "@/lib/metadata";
 
 export const metadata = buildMetadata({
-  title: "Stellar HealthCare Staffing | Hospital Staffing & Home Care in North York, GTA",
+  title: "Stellar HealthCare Staffing | Toronto Healthcare Staffing and Home Care",
   description:
-    "Vetted RNs, RPNs, and PSWs for hospitals and long-term care homes, plus compassionate in-home care for families across the Greater Toronto Area. 24/7 availability.",
+    "Vetted RNs, RPNs, and PSWs for hospital and long-term care staffing, plus compassionate in-home care for families across Toronto, North York, and the Greater Toronto Area. Licensed, insured, and available 24/7.",
   path: "/",
 });
 

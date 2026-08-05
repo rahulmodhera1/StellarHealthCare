@@ -8,18 +8,13 @@ export default function Hero() {
     <section className="relative overflow-hidden bg-navy-900 text-white">
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_45%]">
         <div className="relative z-10 flex flex-col justify-center gap-7 px-6 pb-16 pt-32 sm:px-10 sm:pt-36 lg:px-14 lg:pb-24 lg:pt-40 xl:pl-20">
-          <ConstellationMark className="absolute -left-4 top-16 h-28 w-40 text-teal-400 opacity-60 lg:-left-2 lg:top-10" />
+          <ConstellationMark className="absolute -left-4 top-16 h-28 w-40 text-white/20 lg:-left-2 lg:top-10" />
 
-          <div className="flex items-center gap-3">
-            <span className="h-px w-8 bg-gold-400" />
-            <span className="text-xs font-semibold uppercase tracking-[0.24em] text-gold-400">
-              GTA Healthcare Staffing &amp; Home Care
-            </span>
-          </div>
+          <span className="h-px w-12 bg-gold-400" aria-hidden="true" />
 
           <h1 className="max-w-xl text-[2.6rem] font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.4rem]">
             Exceptional care,{" "}
-            <span className="text-teal-400">whenever and wherever</span> it&apos;s needed.
+            <span className="text-gold-400">whenever and wherever</span> it&apos;s needed.
           </h1>
 
           <p className="max-w-md text-lg leading-relaxed text-white/75">
@@ -32,7 +27,7 @@ export default function Hero() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
             <Link
               href="/contact?inquiry=staffing"
-              className="rounded-full bg-teal-600 px-7 py-3.5 text-center text-sm font-semibold text-white shadow-[0_8px_24px_-8px_rgba(14,124,134,0.6)] transition-colors duration-150 hover:bg-teal-500"
+              className="rounded-full bg-teal-600 px-7 py-3.5 text-center text-sm font-semibold text-white shadow-lg transition-colors duration-150 hover:bg-teal-500"
             >
               Request Staffing
             </Link>
@@ -45,7 +40,7 @@ export default function Hero() {
           </div>
 
           <p className="text-sm text-white/50">
-            Licensed, insured &amp; bonded — care coordination available 24/7.
+            Licensed, insured and bonded. Care coordination available 24/7.
           </p>
         </div>
 

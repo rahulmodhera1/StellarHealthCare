@@ -12,7 +12,7 @@ import { buildMetadata } from "@/lib/metadata";
 export const metadata = buildMetadata({
   title: "About Us",
   description:
-    "Stellar HealthCare Staffing is a North York-based healthcare staffing and home care agency serving the Greater Toronto Area with vetted RNs, RPNs, and PSWs.",
+    "Stellar HealthCare Staffing is a North York-based healthcare staffing and home care agency serving Toronto and the Greater Toronto Area with vetted RNs, RPNs, and PSWs.",
   path: "/about",
 });
 
@@ -20,21 +20,17 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        eyebrow="About Stellar HealthCare Staffing"
-        title="Care that feels personal — because it is."
-        description="We started Stellar to close the gap between a facility's need for reliable staff and a family's need for a caregiver they can trust — with the same rigor and warmth on both sides."
+        title="Care that feels personal, because it is."
+        description="We started Stellar to close the gap between a facility's need for reliable staff and a family's need for a caregiver they can trust, with the same rigor and warmth on both sides."
       />
 
       <section className="py-20 lg:py-28">
         <div className="container-page grid grid-cols-1 items-center gap-14 lg:grid-cols-2 lg:gap-20">
           <ScrollReveal>
-            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-teal-600">
-              Our Story
-            </span>
-            <h2 className="mt-4 font-display text-3xl font-semibold text-navy-900 sm:text-4xl">
+            <h2 className="font-display text-3xl font-semibold text-navy-900 sm:text-4xl">
               Built by people who&apos;ve worked both sides of the call.
             </h2>
-            <div className="mt-6 space-y-4 text-base leading-relaxed text-grey-500">
+            <div className="mt-6 max-w-md space-y-4 text-base leading-relaxed text-grey-500">
               <p>
                 Stellar HealthCare Staffing was founded in North York by a
                 small team of nurses and staffing coordinators who kept
@@ -48,7 +44,7 @@ export default function AboutPage() {
                 Nurses, and Personal Support Workers supports hospitals and
                 long-term care homes across the GTA, while our home care
                 team brings the same standard of vetting and consistency
-                directly into clients&apos; living rooms — for adults,
+                directly into clients&apos; living rooms for adults,
                 seniors, and pediatric clients alike.
               </p>
               <p>
@@ -76,10 +72,7 @@ export default function AboutPage() {
       <section className="bg-surface-muted py-20 lg:py-28">
         <div className="container-page">
           <ScrollReveal className="max-w-xl">
-            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-teal-600">
-              Our Approach
-            </span>
-            <h2 className="mt-4 font-display text-3xl font-semibold text-navy-900 sm:text-4xl">
+            <h2 className="font-display text-3xl font-semibold text-navy-900 sm:text-4xl">
               Four principles behind every placement.
             </h2>
           </ScrollReveal>

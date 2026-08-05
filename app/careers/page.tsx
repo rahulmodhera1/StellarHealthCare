@@ -6,9 +6,9 @@ import { careerBenefits, careersOpenRoles, site } from "@/lib/constants";
 import { buildMetadata } from "@/lib/metadata";
 
 export const metadata = buildMetadata({
-  title: "Careers",
+  title: "Careers for RNs, RPNs, and PSWs in the GTA",
   description:
-    "Join Stellar HealthCare Staffing's roster of RNs, RPNs, and PSWs. Flexible scheduling, transparent pay, and a staffing coordinator who knows you by name.",
+    "Join Stellar HealthCare Staffing's roster of RNs, RPNs, and PSWs across Toronto and the GTA. Flexible scheduling, transparent pay, and a staffing coordinator who knows you by name.",
   path: "/careers",
 });
 
@@ -16,9 +16,8 @@ export default function CareersPage() {
   return (
     <>
       <PageHero
-        eyebrow="Careers at Stellar"
         title="Join a roster that treats you like a professional."
-        description="We're always looking for licensed, compassionate RNs, RPNs, and PSWs to join our team — for hospital and facility placements, or direct home care across the GTA."
+        description="We're always looking for licensed, compassionate RNs, RPNs, and PSWs to join our team for hospital and facility placements, or direct home care across the GTA."
       >
         <a
           href={`mailto:${site.careersEmail}`}
@@ -31,10 +30,7 @@ export default function CareersPage() {
       <section className="py-20 lg:py-24">
         <div className="container-page">
           <ScrollReveal className="max-w-xl">
-            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-teal-600">
-              Open Roles
-            </span>
-            <h2 className="mt-4 font-display text-3xl font-semibold text-navy-900 sm:text-4xl">
+            <h2 className="font-display text-3xl font-semibold text-navy-900 sm:text-4xl">
               We&apos;re hiring across the roster, every month.
             </h2>
           </ScrollReveal>
@@ -49,7 +45,7 @@ export default function CareersPage() {
                 <h3 className="font-display text-xl font-semibold text-navy-900">
                   {role.title}
                 </h3>
-                <p className="mt-1 text-xs font-semibold uppercase tracking-[0.08em] text-teal-600">
+                <p className="mt-2 inline-flex w-fit rounded-full bg-teal-50 px-2.5 py-1 text-xs font-semibold text-teal-700">
                   {role.type}
                 </p>
                 <p className="mt-4 flex-1 text-sm leading-relaxed text-grey-500">
@@ -57,7 +53,7 @@ export default function CareersPage() {
                 </p>
                 <a
                   href={`mailto:${site.careersEmail}?subject=${encodeURIComponent(
-                    `Application — ${role.title}`,
+                    `Application: ${role.title}`,
                   )}`}
                   className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-teal-600 hover:text-teal-700"
                 >
@@ -81,13 +77,10 @@ export default function CareersPage() {
       <section className="bg-surface-muted py-20 lg:py-28">
         <div className="container-page grid grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-20">
           <ScrollReveal>
-            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-teal-600">
-              Why Work With Stellar
-            </span>
-            <h2 className="mt-4 font-display text-3xl font-semibold text-navy-900 sm:text-4xl">
+            <h2 className="font-display text-3xl font-semibold text-navy-900 sm:text-4xl">
               Built for caregivers who want more than a shift list.
             </h2>
-            <p className="mt-6 text-base leading-relaxed text-grey-500">
+            <p className="mt-6 max-w-md text-base leading-relaxed text-grey-500">
               We know retention starts with respect. That&apos;s why every
               caregiver on our roster gets a real staffing coordinator,
               transparent pay, and a say in the schedule that works for
@@ -115,7 +108,7 @@ export default function CareersPage() {
               Ready to bring your license to a team that has your back?
             </h2>
             <p className="mt-3 max-w-md text-white/75">
-              Send us your resume and preferred availability — our team
+              Send us your resume and preferred availability. Our team
               reviews every application personally.
             </p>
           </div>
@@ -128,7 +121,7 @@ export default function CareersPage() {
             </a>
             <Link
               href="/contact"
-              className="text-sm font-semibold text-white underline decoration-teal-400 decoration-2 underline-offset-4"
+              className="text-sm font-semibold text-white underline decoration-gold-400 decoration-2 underline-offset-4"
             >
               Or use our contact form
             </Link>

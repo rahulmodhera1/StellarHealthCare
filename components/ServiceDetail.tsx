@@ -7,7 +7,7 @@ import type { Service } from "@/lib/constants";
 const audienceLabel: Record<Service["audience"], string> = {
   facilities: "For Facilities",
   families: "For Families",
-  both: "For Facilities & Families",
+  both: "For Facilities and Families",
 };
 
 const inquiryFor: Record<Service["audience"], "staffing" | "homecare"> = {
@@ -42,16 +42,16 @@ export default function ServiceDetail({
           className="object-cover"
           loading="lazy"
         />
+        <span className="absolute left-4 top-4 inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-semibold uppercase tracking-[0.1em] text-navy-900 backdrop-blur-sm">
+          {audienceLabel[service.audience]}
+        </span>
       </div>
 
       <div className={clsx(reverse && "lg:order-1")}>
-        <span className="inline-flex items-center rounded-full bg-teal-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.1em] text-teal-700">
-          {audienceLabel[service.audience]}
-        </span>
-        <h2 className="mt-4 font-display text-2xl font-semibold text-navy-900 sm:text-3xl">
+        <h2 className="font-display text-2xl font-semibold text-navy-900 sm:text-3xl">
           {service.title}
         </h2>
-        <p className="mt-4 text-base leading-relaxed text-grey-500">
+        <p className="mt-4 max-w-md text-base leading-relaxed text-grey-500">
           {service.description}
         </p>
         <ul className="mt-6 space-y-3">

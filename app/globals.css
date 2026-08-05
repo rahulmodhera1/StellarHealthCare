@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ---------------------------------------------------------------------- */
-/* Design tokens — primitive -> semantic -> component (per token system)  */
+/* Design tokens: primitive -> semantic -> component (per token system)  */
 /* ---------------------------------------------------------------------- */
 
 :root {
@@ -22,7 +22,7 @@
   --grey-50: #f4f6f7;
   --grey-200: #e3e7e9;
   --grey-400: #9aa4ac;
-  --grey-500: #6b7280;
+  --grey-500: #5c6268;
   --grey-700: #40474e;
 
   --gold-400: #d9c9a3;
@@ -89,7 +89,7 @@
   --color-border-subtle: var(--color-border-subtle);
 
   --font-display: var(--font-playfair), ui-serif, Georgia, serif;
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
 
   --animate-fade-up: fade-up var(--duration-reveal) var(--ease-out-expressive) both;
   --animate-fade-in: fade-in var(--duration-reveal) var(--ease-out-standard) both;
@@ -138,15 +138,20 @@ h4 {
   }
 }
 
-.container-page {
-  width: 100%;
-  max-width: 84rem;
-  margin-inline: auto;
-  padding-inline: 1.5rem;
-}
-
-@media (min-width: 768px) {
+/* Declared inside Tailwind's utilities layer so a max-w-* utility combined
+   on the same element (e.g. `container-page max-w-2xl`) can still win the
+   cascade instead of losing to this custom class's own max-width. */
+@layer utilities {
   .container-page {
-    padding-inline: 2.5rem;
+    width: 100%;
+    max-width: 84rem;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .container-page {
+      padding-inline: 2.5rem;
+    }
   }
 }

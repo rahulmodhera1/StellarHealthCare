@@ -11,7 +11,7 @@ const inquiryOptions: { value: InquiryType; label: string }[] = [
 ];
 
 /**
- * Client-side stubbed submission — no backend is wired up yet. Swap the
+ * Client-side stubbed submission; no backend is wired up yet. Swap the
  * onSubmit handler for a real endpoint (e.g. a Next.js API route emailing
  * through Resend/Postmark, or a Formspree/HubSpot form action) before launch.
  */
@@ -38,7 +38,7 @@ export default function ContactForm() {
         className="rounded-2xl border border-teal-100 bg-teal-50 p-8 text-center"
       >
         <p className="font-display text-xl font-semibold text-navy-900">
-          Thank you — we&apos;ve received your message.
+          Thank you, we&apos;ve received your message.
         </p>
         <p className="mt-2 text-sm text-grey-500">
           A member of our care team will be in touch within one business day.

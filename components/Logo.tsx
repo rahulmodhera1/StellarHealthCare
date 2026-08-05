@@ -18,6 +18,7 @@ export default function Logo({
 }: LogoProps) {
   const ink = variant === "navy" ? "#0b2a4a" : "#ffffff";
   const accent = variant === "navy" ? "#0e7c86" : "#3fa8a0";
+  const subtext = variant === "navy" ? "#0e7c86" : "rgba(255,255,255,0.7)";
 
   return (
     <span className={clsx("inline-flex items-center gap-2.5", className)}>
@@ -52,8 +53,8 @@ export default function Logo({
             Stellar HealthCare
           </span>
           <span
-            className="mt-0.5 text-[0.65rem] font-medium uppercase tracking-[0.22em]"
-            style={{ color: accent }}
+            className="mt-0.5 text-[0.7rem] font-medium uppercase tracking-[0.2em]"
+            style={{ color: subtext }}
           >
             Staffing
           </span>

@@ -7,11 +7,8 @@ export default function Testimonials() {
     <section className="py-20 lg:py-28">
       <div className="container-page">
         <ScrollReveal className="max-w-xl">
-          <span className="text-xs font-semibold uppercase tracking-[0.18em] text-teal-600">
-            What clients and partners say
-          </span>
-          <h2 className="mt-4 font-display text-3xl font-semibold text-navy-900 sm:text-4xl">
-            Trusted across the GTA&apos;s hospitals, care homes, and homes.
+          <h2 className="font-display text-3xl font-semibold text-navy-900 sm:text-4xl">
+            Trusted by hospitals, care homes, and families across the GTA.
           </h2>
         </ScrollReveal>
 
@@ -23,8 +20,8 @@ export default function Testimonials() {
           ))}
         </div>
 
-        <p className="mt-8 text-xs text-grey-500">
-          Placeholder testimonials shown for demonstration — replace with
+        <p className="mt-8 max-w-md text-xs text-grey-500">
+          Placeholder testimonials shown for demonstration. Replace with
           verified client and partner quotes before launch.
         </p>
       </div>

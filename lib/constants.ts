@@ -5,7 +5,7 @@ export const site = {
   shortName: "Stellar HealthCare",
   url: "https://www.stellarhealthcarestaffing.ca",
   description:
-    "Stellar HealthCare Staffing connects hospitals, long-term care homes, and families across the Greater Toronto Area with vetted RNs, RPNs, and PSWs, plus direct in-home care for adults, seniors, and pediatric clients.",
+    "Stellar HealthCare Staffing provides vetted RNs, RPNs, and PSWs for hospital and long-term care staffing, plus in-home care for adults, seniors, and children across Toronto, North York, and the Greater Toronto Area. Licensed, insured, and available 24/7.",
   phone: "(416) 555-0142",
   phoneHref: "tel:+14165550142",
   email: "info@stellarhealthcarestaffing.ca",
@@ -48,10 +48,10 @@ export type Service = {
 export const services: Service[] = [
   {
     slug: "hospital-facility-staffing",
-    title: "Hospital & Long-Term Care Staffing",
-    shortTitle: "Hospital & LTC Staffing",
+    title: "Hospital and Long-Term Care Staffing",
+    shortTitle: "Hospital and LTC Staffing",
     summary:
-      "Credentialed RNs and RPNs deployed to hospitals, long-term care homes, and retirement residences — on short notice, without compromising on quality.",
+      "Credentialed RNs and RPNs deployed to hospitals, long-term care homes, and retirement residences on short notice, without compromising on quality.",
     description:
       "We supplement your unit or facility with fully licensed, background-checked RNs and RPNs who are ready to integrate into your existing care teams. From single-shift coverage to long-term contracts, our staffing coordinators match clinical skill sets to your unit's specific needs, so your standard of care never dips.",
     points: [
@@ -70,10 +70,10 @@ export const services: Service[] = [
     summary:
       "Compassionate PSWs and nurses providing companionship, personal care, and clinical support in the comfort of home.",
     description:
-      "For families who want a loved one to stay independent at home, we match a caregiver to your household — not just a task list. Support ranges from a few hours of companionship and light housekeeping to full personal care and medication support, scheduled around your family's routine.",
+      "For families who want a loved one to stay independent at home, we match a caregiver to your household, not just a task list. Support ranges from a few hours of companionship and light housekeeping to full personal care and medication support, scheduled around your family's routine.",
     points: [
       "Personalized care plans built around your family's routine",
-      "Consistent, familiar caregivers — not a rotating roster",
+      "Consistent, familiar caregivers, not a rotating roster",
       "Support with bathing, mobility, meals, and medication reminders",
       "Flexible scheduling, from a few hours a week to live-in care",
     ],
@@ -82,12 +82,12 @@ export const services: Service[] = [
   },
   {
     slug: "pediatric-complex-care",
-    title: "Pediatric & Complex Care",
-    shortTitle: "Pediatric & Complex Care",
+    title: "Pediatric and Complex Care",
+    shortTitle: "Pediatric and Complex Care",
     summary:
       "Specially trained nurses supporting children and adults with complex medical needs, ventilator care, and developmental support.",
     description:
-      "Complex and pediatric care asks for more than clinical competence — it asks for patience and a genuine connection with the child and family. Our pediatric and complex-care nurses hold specialized training in ventilator management, tracheostomy care, feeding tubes, and developmental support, and we take extra care matching personality as well as skill.",
+      "Complex and pediatric care asks for more than clinical competence. It asks for patience and a genuine connection with the child and family. Our pediatric and complex-care nurses hold specialized training in ventilator management, tracheostomy care, feeding tubes, and developmental support, and we take extra care matching personality as well as skill.",
     points: [
       "Nurses trained in ventilator, trach, and G-tube care",
       "Experience with developmental and behavioural support needs",
@@ -99,12 +99,12 @@ export const services: Service[] = [
   },
   {
     slug: "palliative-respite-care",
-    title: "Palliative & Respite Care",
-    shortTitle: "Palliative & Respite Care",
+    title: "Palliative and Respite Care",
+    shortTitle: "Palliative and Respite Care",
     summary:
       "Dignified end-of-life support for patients and families, and short-term respite so primary caregivers can rest.",
     description:
-      "Palliative care is about comfort, dignity, and presence. Our nurses and PSWs provide symptom management, emotional support, and hands-on care in the home or facility, working alongside your palliative care team. We also offer respite bookings — from a single afternoon to several days — so family caregivers can rest without worry.",
+      "Palliative care is about comfort, dignity, and presence. Our nurses and PSWs provide symptom management, emotional support, and hands-on care in the home or facility, working alongside your palliative care team. We also offer respite bookings, from a single afternoon to several days, so family caregivers can rest without worry.",
     points: [
       "Comfort-focused care coordinated with your palliative team",
       "Emotional support for patients and family members alike",
@@ -137,7 +137,7 @@ export const differentiators = [
   {
     title: "Personalized care matching",
     description:
-      "We match on clinical skill, personality, and language — not just the next available name on a list.",
+      "We match on clinical skill, personality, and language, not just the next available name on a list.",
   },
   {
     title: "Bilingual staff",
@@ -145,7 +145,7 @@ export const differentiators = [
       "A roster spanning English, French, and a wide range of community languages across the GTA.",
   },
   {
-    title: "Insured & bonded",
+    title: "Insured and bonded",
     description:
       "Every placement is backed by liability insurance and bonding, so facilities and families are fully protected.",
   },
@@ -170,7 +170,7 @@ export type Testimonial = {
   role: string;
 };
 
-// Placeholder testimonials — replace with real client and facility quotes.
+// Placeholder testimonials; replace with real client and facility quotes.
 export const testimonials: Testimonial[] = [
   {
     quote:
@@ -195,19 +195,19 @@ export const testimonials: Testimonial[] = [
 export const careersOpenRoles = [
   {
     title: "Registered Nurse (RN)",
-    type: "Full-time, Part-time & Per-diem",
+    type: "Full-time, Part-time and Per-diem",
     blurb:
       "Hospital, long-term care, and community placements across the GTA. Competitive rates, flexible scheduling.",
   },
   {
     title: "Registered Practical Nurse (RPN)",
-    type: "Full-time, Part-time & Per-diem",
+    type: "Full-time, Part-time and Per-diem",
     blurb:
       "Facility and home care placements available. New graduates welcome with a supported onboarding period.",
   },
   {
     title: "Personal Support Worker (PSW)",
-    type: "Full-time, Part-time & Per-diem",
+    type: "Full-time, Part-time and Per-diem",
     blurb:
       "In-home and facility roles. Certificate required; complex care and pediatric training an asset.",
   },
@@ -226,7 +226,7 @@ export const aboutValues = [
   {
     title: "Person-first matching",
     description:
-      "We match on personality and language, not just a certification — because the right fit is what makes care work long-term.",
+      "We match on personality and language, not just a certification, because the right fit is what makes care work long-term.",
   },
   {
     title: "Clinical rigor",

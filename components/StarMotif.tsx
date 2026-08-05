@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
 
 /**
- * Sparse decorative constellation mark — the brand's "Stellar" motif.
+ * Sparse decorative constellation mark, the brand's "Stellar" motif.
  * Used a handful of times per page (hero, dividers), never as a repeating pattern.
  */
 export function ConstellationMark({ className }: { className?: string }) {

@@ -8,10 +8,7 @@ export default function ServicesSection() {
     <section className="py-20 lg:py-28">
       <div className="container-page">
         <ScrollReveal className="max-w-xl">
-          <span className="text-xs font-semibold uppercase tracking-[0.18em] text-teal-600">
-            Our Services
-          </span>
-          <h2 className="mt-4 font-display text-3xl font-semibold text-navy-900 sm:text-4xl">
+          <h2 className="font-display text-3xl font-semibold text-navy-900 sm:text-4xl">
             One roster, four ways to get the right care in place.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-grey-500">
