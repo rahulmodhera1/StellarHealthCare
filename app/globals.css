@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------- */
+/* Design tokens — primitive -> semantic -> component (per token system)  */
+/* ---------------------------------------------------------------------- */
+
+:root {
+  /* Primitives */
+  --navy-950: #061729;
+  --navy-900: #0b2a4a;
+  --navy-800: #123a61;
+  --navy-700: #1c4d7a;
+  --navy-600: #2c6394;
+
+  --teal-700: #0a626b;
+  --teal-600: #0e7c86;
+  --teal-500: #3fa8a0;
+  --teal-400: #6fc2ba;
+  --teal-100: #e3f2f1;
+  --teal-50: #f0f8f7;
+
+  --grey-50: #f4f6f7;
+  --grey-200: #e3e7e9;
+  --grey-400: #9aa4ac;
+  --grey-500: #6b7280;
+  --grey-700: #40474e;
+
+  --gold-400: #d9c9a3;
+  --gold-500: #c9b385;
+
+  --white: #ffffff;
+
+  /* Semantic */
+  --color-surface: var(--white);
+  --color-surface-muted: var(--grey-50);
+  --color-surface-inverse: var(--navy-900);
+
+  --color-ink: var(--navy-900);
+  --color-ink-muted: var(--grey-500);
+  --color-ink-inverse: var(--white);
+
+  --color-brand-primary: var(--navy-900);
+  --color-brand-accent: var(--teal-600);
+  --color-brand-accent-hover: var(--teal-500);
+  --color-brand-gold: var(--gold-400);
+
+  --color-border-subtle: var(--grey-200);
+
+  /* Motion tokens (emil-design-eng: responsive ease-out entrances, sub-300ms UI) */
+  --ease-out-expressive: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-standard: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --duration-ui: 180ms;
+  --duration-reveal: 640ms;
+}
+
+@theme inline {
+  --color-navy-950: var(--navy-950);
+  --color-navy-900: var(--navy-900);
+  --color-navy-800: var(--navy-800);
+  --color-navy-700: var(--navy-700);
+  --color-navy-600: var(--navy-600);
+
+  --color-teal-700: var(--teal-700);
+  --color-teal-600: var(--teal-600);
+  --color-teal-500: var(--teal-500);
+  --color-teal-400: var(--teal-400);
+  --color-teal-100: var(--teal-100);
+  --color-teal-50: var(--teal-50);
+
+  --color-grey-50: var(--grey-50);
+  --color-grey-200: var(--grey-200);
+  --color-grey-400: var(--grey-400);
+  --color-grey-500: var(--grey-500);
+  --color-grey-700: var(--grey-700);
+
+  --color-gold-400: var(--gold-400);
+  --color-gold-500: var(--gold-500);
+
+  --color-surface: var(--color-surface);
+  --color-surface-muted: var(--color-surface-muted);
+  --color-surface-inverse: var(--color-surface-inverse);
+  --color-ink: var(--color-ink);
+  --color-ink-muted: var(--color-ink-muted);
+  --color-ink-inverse: var(--color-ink-inverse);
+  --color-brand-primary: var(--color-brand-primary);
+  --color-brand-accent: var(--color-brand-accent);
+  --color-brand-accent-hover: var(--color-brand-accent-hover);
+  --color-brand-gold: var(--color-brand-gold);
+  --color-border-subtle: var(--color-border-subtle);
+
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --animate-fade-up: fade-up var(--duration-reveal) var(--ease-out-expressive) both;
+  --animate-fade-in: fade-in var(--duration-reveal) var(--ease-out-standard) both;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container-page {
+  width: 100%;
+  max-width: 84rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container-page {
+    padding-inline: 2.5rem;
+  }
+}
