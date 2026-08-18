@@ -21,10 +21,10 @@ export default function Logo({
   const subtext = variant === "navy" ? "#0e7c86" : "rgba(255,255,255,0.7)";
 
   return (
-    <span className={clsx("inline-flex items-center gap-2.5", className)}>
+    <span className={clsx("inline-flex items-center gap-3", className)}>
       <svg
-        width="34"
-        height="34"
+        width="46"
+        height="46"
         viewBox="0 0 34 34"
         fill="none"
         aria-hidden="true"
@@ -47,13 +47,13 @@ export default function Logo({
       {showWordmark && (
         <span className="flex flex-col leading-none">
           <span
-            className="font-display text-[1.05rem] font-semibold tracking-tight"
+            className="font-display text-[1.45rem] font-semibold tracking-tight"
             style={{ color: ink }}
           >
             Stellar HealthCare
           </span>
           <span
-            className="mt-0.5 text-[0.7rem] font-medium uppercase tracking-[0.2em]"
+            className="mt-1 text-[0.8rem] font-medium uppercase tracking-[0.18em]"
             style={{ color: subtext }}
           >
             Staffing
