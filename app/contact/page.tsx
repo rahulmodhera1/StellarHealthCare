@@ -59,7 +59,7 @@ export default function ContactPage() {
               </address>
             </div>
 
-            <div className="h-72 overflow-hidden rounded-3xl border border-border-subtle sm:h-80">
+            <div className="h-96 overflow-hidden rounded-3xl border border-border-subtle sm:h-[420px]">
               <MapEmbed />
             </div>
           </ScrollReveal>

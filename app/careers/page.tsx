@@ -110,19 +110,35 @@ export default function CareersPage() {
               reviews every application personally.
             </p>
           </div>
-          <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+            <a
+              href={`mailto:${site.careersEmail}`}
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-3.5 text-sm font-semibold text-white transition-colors duration-150 hover:border-white hover:bg-white/10"
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path
+                  d="M2.5 4.5h11a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1Z"
+                  stroke="currentColor"
+                  strokeWidth="1.3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M2 5l6 4.2L14 5"
+                  stroke="currentColor"
+                  strokeWidth="1.3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              Email Us
+            </a>
             <Link
               href="/apply"
-              className="rounded-full bg-teal-500 px-7 py-3.5 text-sm font-semibold text-navy-900 transition-colors duration-150 hover:bg-white"
+              className="inline-flex items-center justify-center rounded-full bg-teal-500 px-7 py-3.5 text-sm font-semibold text-navy-900 transition-colors duration-150 hover:bg-white"
             >
               Apply Now
             </Link>
-            <a
-              href={`mailto:${site.careersEmail}`}
-              className="text-sm font-semibold text-white underline decoration-gold-400 decoration-2 underline-offset-4"
-            >
-              Or email {site.careersEmail}
-            </a>
           </div>
         </ScrollReveal>
       </section>

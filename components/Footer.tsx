@@ -102,7 +102,7 @@ export default function Footer() {
             </p>
             <p className="text-white/50">{site.hours}</p>
           </address>
-          <div className="mt-5 h-36 overflow-hidden rounded-xl border border-white/10">
+          <div className="mt-5 h-52 overflow-hidden rounded-xl border border-white/10">
             <MapEmbed />
           </div>
         </div>
