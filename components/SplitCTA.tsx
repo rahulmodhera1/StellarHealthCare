@@ -7,7 +7,7 @@ const panels = [
     tag: "For Facilities",
     title: "Fill shifts with confidence, not compromise.",
     body: "From single-shift coverage to long-term contracts, our staffing coordinators respond fast and match nurses to your unit's specific clinical needs.",
-    cta: { label: "Request Staffing", href: "/contact?inquiry=staffing" },
+    cta: { label: "Request Staffing", href: "/request-staff" },
     tone: "navy" as const,
   },
   {

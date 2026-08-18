@@ -57,8 +57,13 @@ export default function Footer() {
               </li>
             ))}
             <li>
-              <Link href="/careers" className="hover:text-white">
-                Join Our Roster
+              <Link href="/apply" className="hover:text-white">
+                Apply Now
+              </Link>
+            </li>
+            <li>
+              <Link href="/request-staff" className="hover:text-white">
+                Request Staffing
               </Link>
             </li>
           </ul>

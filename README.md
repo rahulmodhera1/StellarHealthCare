@@ -96,17 +96,37 @@ permission-cleared client and partner testimonials before launch, and
 remove the "placeholder testimonials" disclaimer line in
 `components/Testimonials.tsx`.
 
-## Contact form
+## Contact, apply, and request-staff forms
 
-`components/ContactForm.tsx` is a working client-side form (validation,
-inquiry-type toggle pre-filled from `?inquiry=staffing|homecare`, submit
-state), but the submit handler is currently **stubbed**: it does not send
-data anywhere. Before launch, wire it to a real destination, e.g.:
+Three separate forms cover the site's three audiences, and all three are
+**stubbed the same way**: fully working client-side validation and a
+success state, but the submit handler doesn't send data anywhere yet.
 
-- A Next.js Route Handler (`app/api/contact/route.ts`) that emails through
-  Resend/Postmark/SendGrid, or
-- A form backend such as Formspree/Basin, or
-- A CRM intake webhook.
+- `components/ContactForm.tsx` (`/contact`) — general inquiries from
+  families or facilities, with an inquiry-type toggle pre-filled from
+  `?inquiry=staffing|homecare`.
+- `components/ApplyForm.tsx` (`/apply`) — job applications from
+  prospective RNs, RPNs, and PSWs. Includes a resume file input; the file
+  is selected in the browser but **is not uploaded anywhere** in the
+  current stub. Linked from the Careers page's role cards with
+  `?role=` pre-filling the position dropdown.
+- `components/RequestStaffForm.tsx` (`/request-staff`) — staffing
+  requests from hospitals and long-term care homes (facility name/type,
+  staff type needed, urgency). Linked from the Hero, the homepage's "For
+  Facilities" panel, and facility-audience services on `/services`.
+
+Before launch, wire all three to a real destination, e.g.:
+
+- A Next.js Route Handler per form (e.g. `app/api/apply/route.ts`,
+  `app/api/request-staff/route.ts`) that emails the right inbox through
+  Resend/Postmark/SendGrid.
+- For the resume upload specifically, the route handler also needs to
+  store the file somewhere (Vercel Blob, S3, or similar) before or while
+  emailing it, since Vercel's serverless functions don't persist disk
+  writes.
+- Alternatively, point each form at a form backend that supports file
+  uploads (Formspree's paid tier, Basin) or an ATS's own application form
+  (Breezy, BambooHR) instead of building a custom endpoint.
 
 ## Map
 

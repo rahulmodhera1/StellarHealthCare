@@ -10,10 +10,10 @@ const audienceLabel: Record<Service["audience"], string> = {
   both: "For Facilities and Families",
 };
 
-const inquiryFor: Record<Service["audience"], "staffing" | "homecare"> = {
-  facilities: "staffing",
-  families: "homecare",
-  both: "staffing",
+const destinationFor: Record<Service["audience"], string> = {
+  facilities: "/request-staff",
+  families: "/contact?inquiry=homecare",
+  both: "/contact?inquiry=staffing",
 };
 
 export default function ServiceDetail({
@@ -79,7 +79,7 @@ export default function ServiceDetail({
           ))}
         </ul>
         <Link
-          href={`/contact?inquiry=${inquiryFor[service.audience]}`}
+          href={destinationFor[service.audience]}
           className="mt-7 inline-flex items-center gap-2 rounded-full bg-teal-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-teal-500"
         >
           Ask about {service.shortTitle}

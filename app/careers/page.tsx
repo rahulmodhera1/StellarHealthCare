@@ -19,12 +19,12 @@ export default function CareersPage() {
         title="Join a roster that treats you like a professional."
         description="We're always looking for licensed, compassionate RNs, RPNs, and PSWs to join our team for hospital and facility placements, or direct home care across the GTA."
       >
-        <a
-          href={`mailto:${site.careersEmail}`}
+        <Link
+          href="/apply"
           className="inline-flex items-center gap-2 rounded-full bg-teal-600 px-7 py-3.5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-teal-500"
         >
           Apply Now
-        </a>
+        </Link>
       </PageHero>
 
       <section className="py-20 lg:py-24">
@@ -51,10 +51,8 @@ export default function CareersPage() {
                 <p className="mt-4 flex-1 text-sm leading-relaxed text-grey-500">
                   {role.blurb}
                 </p>
-                <a
-                  href={`mailto:${site.careersEmail}?subject=${encodeURIComponent(
-                    `Application: ${role.title}`,
-                  )}`}
+                <Link
+                  href={`/apply?role=${encodeURIComponent(role.title)}`}
                   className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-teal-600 hover:text-teal-700"
                 >
                   Apply for this role
@@ -67,7 +65,7 @@ export default function CareersPage() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </a>
+                </Link>
               </ScrollReveal>
             ))}
           </div>
@@ -113,18 +111,18 @@ export default function CareersPage() {
             </p>
           </div>
           <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-            <a
-              href={`mailto:${site.careersEmail}`}
+            <Link
+              href="/apply"
               className="rounded-full bg-teal-500 px-7 py-3.5 text-sm font-semibold text-navy-900 transition-colors duration-150 hover:bg-white"
             >
-              Email {site.careersEmail}
-            </a>
-            <Link
-              href="/contact"
+              Apply Now
+            </Link>
+            <a
+              href={`mailto:${site.careersEmail}`}
               className="text-sm font-semibold text-white underline decoration-gold-400 decoration-2 underline-offset-4"
             >
-              Or use our contact form
-            </Link>
+              Or email {site.careersEmail}
+            </a>
           </div>
         </ScrollReveal>
       </section>

@@ -26,7 +26,7 @@ export default function Hero() {
 
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
             <Link
-              href="/contact?inquiry=staffing"
+              href="/request-staff"
               className="rounded-full bg-teal-600 px-7 py-3.5 text-center text-sm font-semibold text-white shadow-lg transition-colors duration-150 hover:bg-teal-500"
             >
               Request Staffing
